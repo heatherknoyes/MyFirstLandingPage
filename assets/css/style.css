@@ -1,15 +1,23 @@
 * {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: lavender;
 }
 
 header {
     top: 0;
-    border-bottom: 10px dotted darkblue;
+    border-bottom: 10px groove darkblue;
 }
 
-h1 {
+body {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+h1, h3 {
+    margin-left: 10px;
     float: left;
     display: inline;
+    background-color: violet;
 }
 
 h5 {
@@ -19,75 +27,56 @@ h5 {
 
 footer {
     bottom: 0px;
-    border-top: 10px dotted darkblue;
-}
-
-.bar {
-    height: relative;
-    display: inline;
-    position: fixed;
-    width: 100%;
-    height: 70px;
-    text-align: center;
-    background-color: violet;
-    position: fixed;
+    border-top: 10px groove darkblue;
 }
 
 li {
     float: right;
     margin-right: 20px;
     list-style-type: none;
+    background-color: violet;
 }
 
-.split {
-    height: 100%;
-    width: 50%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    overflow-x: hidden;
-    padding-top: 20px;
-  }
-  
-  /* Control the left side */
-  .left {
+.bar {
     left: 0;
-  }
-  
-  /* Control the right side */
-  .right {
-    right: 0;
-  }
-
-  section {
-      position: relative;
-      top: 20%;
-      padding: 600px;
-  }
-  
-  /* If you want the content centered horizontally and vertically */
-  .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: fixed;
+    display: inline;
+    position: fixed;
+    width: 100%;
+    height: 70px;
     text-align: center;
-  }
-  
-  /* Style the image inside the centered container, if needed */
-  .centered img {
+    background-color: violet;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+.column img {
     width: 300px;
     border-radius: 50%;
     height: auto;
-  }
-
-figcaption {
-    margin-bottom: 25px;
-    margin-top: 25px;
 }
 
-#hero {
-    max-width: 100%;
+#email {
+    margin-left: 41px;
+}
+
+#name {
+    margin-left: 6px;
 }
 
 
